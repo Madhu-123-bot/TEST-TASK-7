@@ -1,0 +1,20 @@
+{
+    "metrics": {
+        "append_dimensions": {
+            "InstanceId": "${aws:InstanceId}"
+        },
+        "metrics_collected": {
+            "CPU": {
+                "measurement": [
+                    "cpu_usage_idle",
+                    "cpu_usage_user",
+                    "cpu_usage_system"
+                ],
+                "resources": [
+                    "*"
+                ],
+                "unit": "Percent"
+            }
+        }
+    }
+}
